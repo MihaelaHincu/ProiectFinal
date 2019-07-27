@@ -64,7 +64,7 @@ function showTable() {
     document.querySelector("#edit").style.display = "none";
     document.querySelector("form").style.display = "none";
     document.querySelector("table").style.display = "";
-    document.querySelector("#list").style.display = "";
+
 }
 
 
