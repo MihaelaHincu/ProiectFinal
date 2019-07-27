@@ -26,9 +26,6 @@ var idxEdit = null;
         lista = answer;
         draw();
       })
-      .catch(function(err) {
-        console.error(err);
-      })
   };
 
 
