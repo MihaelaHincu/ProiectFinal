@@ -204,9 +204,7 @@ async function changeStock() {
   }
 
 async function order() {
-
   for (var i in list) {
-
     if (list[i] == null) {
       continue;
     };
@@ -217,8 +215,18 @@ async function order() {
       } else {
         document.getElementById(i).style.color = "red";
       }
-    }
+    } else if (Number(list[i].quantity) == Number(list[i].stock)) {
+      var index = insufficientStock.indexOf(i);
+      if (index !== -1) {
+        insufficientStock.splice(index, 1);
+      };
+    } else {
+      var index = insufficientStock.indexOf(i);
+      if (index !== -1) {
+        insufficientStock.splice(index, 1);
+      };
 
+    }
   }
   if (insufficientStock.length == 0) {
     await changeStock();
