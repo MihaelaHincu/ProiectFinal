@@ -202,7 +202,6 @@ async function changeStock() {
  
     }
   }
-}
 
 async function order() {
 
