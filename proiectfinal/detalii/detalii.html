@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProiectFinal</title>
+
+
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+
+  <link href="detalii.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../grid.css">
+
+</head>
+
+<body onload="loading();" >
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div>
+      <header class="header-fixed">
+
+        <div class="header-limiter ">
+
+          <h1><a href="../index.html">Proiect<span>final</span></a></h1>
+
+          <nav>
+            <a href="../index.html">Home</a>
+            <a href="../cart/cart.html"><span id="cartNumber"></span> Cumparaturi</a>
+
+            <a href="../admin/admin.html"> Admin</a>
+          </nav>
+
+        </div>
+
+      </header>
+      <div class="hidden col-lg-9 col-sm-9 col-xs-10 " id="showAdded">Produsul a fost adaugat in cos.</div>
+      <div>
+        <h1 class="space title"><img class="makeitrain" src="undraw_web_development_w2vv.svg" alt="">Shopping<span
+            class="it">it</span>
+        </h1>
+      </div>
+
+
+      <div class="wrapper col-lg-9 col-sm-9 col-xs-10 " id="productsContainer">
+        <div class="column">
+          <div class="card">
+            <h3 id="name">Numele Produsului</h3>
+            <h4 id="brand">Numele Brandului</h4>
+            <div id="image"><img src=""> </div>
+            <div>
+              <h4 class="left" style="display:inline-block">Pret (lei): </h4><span style="display:inline-block;"
+                id="price" class="right"></span>
+            </div>
+            <h4 id="stock">Stoc:66</h4>
+            <div style="display:flex">
+              Cantitate: <input type="number" name="quantity" min="1" value="1" style="width:50px;">
+            </div>
+            <div id="buybtn"></div>
+
+          </div>
+        </div>
+
+        <div>
+          <br>
+          <p id="detalii">Detalii</p>
+          <p id="description">
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur repudiandae illum est eaque
+            voluptatem modi, quaerat itaque beatae, voluptate sed laborum ratione. Assumenda doloremque nostrum nesciunt
+            maiores, pariatur vitae.
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <footer class="footer-distributed space">
+
+        <div class="footer-left">
+
+
+          <a href="https://scoalainformala.ro/" rel="home"><img class="space"
+              src="https://scoalainformala.ro/wp-content/uploads/2019/06/logo_color.png" alt="Școala informală de IT">
+          </a>
+
+          <p class="footer-company-name">Hincu Mihaela &copy; 2019</p>
+        </div>
+
+        <div class="footer-center">
+
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Dangerous Divas</span>Bucuresti,Romania</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+0 000 002 0-2</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">support@proiectfinal.com</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+
+          <p class="footer-company-about">
+            <span>About the project</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+            vehicula sit amet.
+          </p>
+
+          <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+
+
+
+    <script src="detalii.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
