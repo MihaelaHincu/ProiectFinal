@@ -196,11 +196,7 @@ async function changeStock() {
       stock -= nrOfProd;
       await ajax("PUT", `https://proiectfinal-c3768.firebaseio.com/products/${i}/stock.json`, JSON.stringify(stock), undefined)
 
-      for (var i = 0; i < itemsInCart.length; i++) {
-          var item = itemsInCart[i];
-          if (item.id == id) {
-              item.quantity = parseInt(quantity);
-          }
+
       }
   
  
